@@ -15,10 +15,15 @@ public class App {
        x.writeLinesFromFile("readme.md");
 */
 
-        Zupa bestZupa = new Zupa("pomidorowa","krem","czerwona");
+        Zupa bestZupa = new Zupa("pomidorowa", "krem", "czerwona");
         Jadlodajnia jadlodajnia = new Jadlodajnia();
         jadlodajnia.serializacja(bestZupa);
-        String nowaZupa;
+        Zupa szczaw = jadlodajnia.deserializacja("{\"name\":\"szczaw\",\"rodzaj\":\"krem\",\"kolor\":\"czerwona\"}");
+
+
+        String nowaZupa=" zurek ";
+        System.out.println(szczaw.name + nowaZupa);
+
 
     }
 }

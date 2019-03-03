@@ -9,9 +9,16 @@ public class App {
     }
 
     public static void main(String[] args) throws Exception {
-        System.out.println(new App().getGreeting());
+/*       System.out.println(new App().getGreeting());
         SundayF x= new SundayF();
         x.readLinesFromFile("U:\\dev\\testy3\\src\\main\\java\\pl\\saltsoft\\App.java");
-        x.writeLinesFromFile("readme.md");
+       x.writeLinesFromFile("readme.md");
+*/
+
+        Zupa bestZupa = new Zupa("pomidorowa","krem","czerwona");
+        Jadlodajnia jadlodajnia = new Jadlodajnia();
+        jadlodajnia.serializacja(bestZupa);
+        String nowaZupa;
+
     }
 }

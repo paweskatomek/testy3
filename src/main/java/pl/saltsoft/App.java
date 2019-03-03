@@ -8,7 +8,10 @@ public class App {
         return "Hello world.";
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         System.out.println(new App().getGreeting());
+        SundayF x= new SundayF();
+        x.readLinesFromFile("U:\\dev\\testy3\\src\\main\\java\\pl\\saltsoft\\App.java");
+        x.writeLinesFromFile("readme.md");
     }
 }
